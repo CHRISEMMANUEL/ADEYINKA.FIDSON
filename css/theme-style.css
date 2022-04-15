@@ -74,10 +74,10 @@ html, body{
 	float:right;
 }
 .top-grid span{
-	width:143px;
+	width:83px;
 	height:143px;
 	display:inline-block;
-	background:url(../images/icons.png) no-repeat 0px 0px;
+	background:url(../images/icon4.jpg) no-repeat 0px 0px;
 }
 .top-grid span.icon1{
 	background-position:0px 0px;
