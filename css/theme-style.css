@@ -494,7 +494,7 @@ p.m_5 {
 }
 .btn-red-lg{
 	background: url(../images/racket-icon.png) no-repeat #E74C3C 17px 21px;
-	border: 1px solid #E74C3C;
+	border: 1px solid rgb(228, 106, 92);
 	transition: 0.5s all;
 	-webkit-transition: 0.5s all;
 	-moz-transition: 0.5s all;
