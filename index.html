@@ -8,6 +8,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <html>
 	<head>
 		<title>ADEMOLA ADEYINKA  | FRONTLINER FIDSON</title>
+		<link rel="stylesheet" href="css/style.css">
 		<link rel="shortcut icon" type="image/x-icon" href="images/fav-icon.png" />
 		<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
 		<link href="css/bootstrap.min.css" rel='stylesheet' type='text/css' />
@@ -16,21 +17,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		 <!-- Custom Theme files -->
 		<link href="css/theme-style.css" rel='stylesheet' type='text/css' />
    		 <script src="js/jquery.easing.min.js"></script>
-   		 <!-- Custom Theme files -->
+			<!-- Custom Theme files -->
+
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="shortcut icon" type="image/x-icon" href="images/fav-icon.png" />
 		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 		</script>
 		<!----webfonts---->
 		<link href='http://fonts.googleapis.com/css?family=Raleway:400,100,300,500,700,800,900,600,200' rel='stylesheet' type='text/css'>
-		<!----//webfonts---->
-		<!----requred-js-files---->
-		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-		<!--[if lt IE 9]>
-		    <script src="js/html5shiv.js"></script>
-		    <script src="js/respond.min.js"></script>
-		<![endif]-->
-		<!----//requred-js-files---->
+		
 		<script type="text/javascript" 	src="js/jquery.smint.js"></script>
 		<script type="text/javascript">
 			$(document).ready( function() {
@@ -121,167 +116,150 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<h3> PRODUCTS</h3>
 				<p>These are some of our products.</p>
 			</div>
-			<!---- start-portfolio-script----->
-			<script src="js/hover_pack.js"></script>
-			<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
-			<script type="text/javascript">
-				$(function () {
-					var filterList = {
-						init: function () {
-						
-							// MixItUp plugin
-							// http://mixitup.io
-							$('#portfoliolist').mixitup({
-								targetSelector: '.portfolio',
-								filterSelector: '.filter',
-								effects: ['fade'],
-								easing: 'snap',
-								// call the hover effect
-								onMixEnd: filterList.hoverEffect()
-							});				
-						
-						},
-						hoverEffect: function () {
-							// Simple parallax effect
-							$('#portfoliolist .portfolio').hover(
-								function () {
-									$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
-									$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');				
-								},
-								function () {
-									$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
-									$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');								
-								}		
-							);				
-						
-						}
-			
-					};
-					// Run the show!
-					filterList.init();
-				});	
-			</script>
-			<!----//End-portfolio-script----->
-					<ul id="filters" class="clearfix">
-						<li><span class="filter active" data-filter="app card icon logo web">All</span></li>
-						<li><span class="filter" data-filter="app">Blood-tonic</span></li>
-						<li><span class="filter" data-filter="card">Syrups</span></li>
-						<li><span class="filter" data-filter="icon">infusion</span></li>
-						<li><span class="filter" data-filter="web">Relief</span></li>
-					</ul>
-					<div id="portfoliolist">
-					<div class="portfolio logo1 mix_all" data-cat="logo" style="display: inline-block; opacity: 1;">
-						<div class="portfolio-wrapper">		
-							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
-						     <img src="images/A1.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt=""/></h2>
-						  	</div></a>
-		                </div>
-					</div>				
-					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
-						<div class="portfolio-wrapper">		
-							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
-						     <img src="images/A2.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt=""/></h2>
-						  	</div></a>
-		                </div>
-					</div>		
-					<div class="portfolio web mix_all" data-cat="web" style="display: inline-block; opacity: 1;">
-						<div class="portfolio-wrapper">		
-							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
-						     <img src="images/A3.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt=""/></h2>
-						  	</div></a>
-		                </div>
-					</div>				
-					<div class="portfolio icon mix_all" data-cat="icon" style="display: inline-block; opacity: 1;">
-						<div class="portfolio-wrapper">		
-							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
-						     <img src="images/A4.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt=""/></h2>
-						  	</div></a>
-		                </div>
-					</div>	
-					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
-						<div class="portfolio-wrapper">		
-							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
-						     <img src="images/A5.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt=""/></h2>
-						  	</div></a>
-		                </div>
-					</div>			
-					<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
-						<div class="portfolio-wrapper">		
-							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
-						     <img src="images/A6.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt=""/></h2>
-						  	</div></a>
-		                </div>
-					</div>	
-					<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
-						<div class="portfolio-wrapper">		
-							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
-						     <img src="images/A7.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt=""/></h2>
-						  	</div></a>
-		                </div>
-					</div>	
-					<div class="portfolio logo1 mix_all" data-cat="icon" style="display: inline-block; opacity: 1;">
-						<div class="portfolio-wrapper">		
-							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
-						     <img src="images/A8.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt=""/></h2>
-						  	</div></a>
-		                </div>
+			<section>
+				<ul>
+				  <li class="list active" data-filter="all">all</li>
+				  <li class="list" data-filter="Blood-tonic">Blood-tonic</li>
+				  <li class="list" data-filter="Infusion">Infusion</li>
+				  <li class="list" data-filter="Syrups">Syrups</li>
+				  <li class="list" data-filter="Multivite">Multivite</li>
+				  <li class="list" data-filter="Relief">Relief</li>
+				</ul>
+				<div class="product">
+					<div class="itemBox Blood-tonic">
+						<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						<img src="images/A1.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt=""/></h2>
+						 </div></a>
 					</div>
-					<div class="portfolio logo1 mix_all" data-cat="icon" style="display: inline-block; opacity: 1;">
-						<div class="portfolio-wrapper">		
-							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
-						     <img src="images/A9.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt=""/></h2>
-						  	</div></a>
-		                </div>
+					<div class="itemBox Infusion">
+						<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						<img src="images/A4.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt=""/></h2>
+						 </div></a>
 					</div>
-					<div class="portfolio logo1 mix_all" data-cat="icon" style="display: inline-block; opacity: 1;">
-						<div class="portfolio-wrapper">		
-							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
-						     <img src="images/A10.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt=""/></h2>
-						  	</div></a>
-		                </div>
+					<div class="itemBox Syrups">
+						<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						<img src="images/A14.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt=""/></h2>
+						 </div></a>
 					</div>
-					<div class="portfolio logo1 mix_all" data-cat="icon" style="display: inline-block; opacity: 1;">
-						<div class="portfolio-wrapper">		
-							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
-						     <img src="images/A11.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt=""/></h2>
-						  	</div></a>
-		                </div>
+					<div class="itemBox Multivite">
+						<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						<img src="images/A6.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt=""/></h2>
+						 </div></a>
 					</div>
-					<div class="portfolio logo1 mix_all" data-cat="icon" style="display: inline-block; opacity: 1;">
-						<div class="portfolio-wrapper">		
-							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
-						     <img src="images/A12.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt=""/></h2>
-						  	</div></a>
-		                </div>
+					<div class="itemBox Relief">
+						<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						<img src="images/A3.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt=""/></h2>
+						 </div></a>
 					</div>
-					<div class="portfolio logo1 mix_all" data-cat="icon" style="display: inline-block; opacity: 1;">
-						<div class="portfolio-wrapper">		
-							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
-						     <img src="images/A13.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt=""/></h2>
-						  	</div></a>
-		                </div>
+					<div class="itemBox Blood-tonic">
+						<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						<img src="images/A5.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt=""/></h2>
+						 </div></a>
 					</div>
-					<div class="portfolio logo1 mix_all" data-cat="icon" style="display: inline-block; opacity: 1;">
-						<div class="portfolio-wrapper">		
-							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
-						     <img src="images/A14.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt=""/></h2>
-						  	</div></a>
-		                </div>
+					<div class="itemBox Infusion">
+						<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						<img src="images/A13.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt=""/></h2>
+						 </div></a>
 					</div>
-					<div class="portfolio logo1 mix_all" data-cat="icon" style="display: inline-block; opacity: 1;">
-						<div class="portfolio-wrapper">		
-							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
-						     <img src="images/A15.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt=""/></h2>
-						  	</div></a>
-		                </div>
+					<div class="itemBox Syrups">
+						<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						<img src="images/B.CO.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt=""/></h2>
+						 </div></a>
 					</div>
-					<div class="portfolio logo1 mix_all" data-cat="icon" style="display: inline-block; opacity: 1;">
-						<div class="portfolio-wrapper">		
-							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
-						     <img src="images/A3.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt=""/></h2>
-						  	</div></a>
-		                </div>
+					<div class="itemBox Multivite">
+						<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						<img src="images/A16.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt=""/></h2>
+						 </div></a>
 					</div>
+					<div class="itemBox Blood-tonic">
+						<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						<img src="images/A10.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt=""/></h2>
+						 </div></a>
+					</div>
+					<div class="itemBox Infusion">
+						<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						<img src="images/DEXTROSE SALINE.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt=""/></h2>
+						 </div></a>
+					</div>
+					<div class="itemBox Syrups">
+						<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						<img src="images/ZOTRIM.png" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt=""/></h2>
+						 </div></a>
+					</div>
+					<div class="itemBox Infusion">
+						<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+							<img src="images/METRONE.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt=""/></h2>
+							 </div></a>
+					</div>
+					<div class="itemBox Syrups">
+						<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						<img src="images/A12.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt=""/></h2>
+						 </div></a>
+					</div>
+					<div class="itemBox Relief">
+						<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						<img src="images/ART.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt=""/></h2>
+						 </div></a></div>
+					<div class="itemBox Infusion">
+						<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						<img src="images/CIPRO IV.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt=""/></h2>
+						 </div></a>
+					</div>
+					<div class="itemBox Multivite">
+						<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						<img src="images/A2.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt=""/></h2>
+						 </div></a>>
+					</div>
+					<div class="itemBox Relief">
+						<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						<img src="images/A15.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt=""/></h2>
+						 </div></a>
+					</div>
+					<div class="itemBox Others">
+						<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						<img src="images/ASOMEX.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt=""/></h2>
+						 </div></a>
+					</div>
+					<div class="itemBox Others">
+						<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						<img src="images/ARTH.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt=""/></h2>
+						 </div></a>
+					</div>
+					<div class="itemBox Others">
+						<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						<img src="images/TUXIL.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt=""/></h2>
+						 </div></a>
+					</div>
+					<div class="itemBox Others">
+						<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						<img src="images/TET.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt=""/></h2>
+						 </div></a>
+				</div>
+			</section>
+			<script src="https://code.jquery.com/jquery-3.6.0.js"
+		integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+		crossorigin="anonymous"></script>
+	  
+		<script type="text/javascript">
+		  $(document).ready(function(){
+			$('.list').click(function(){
+				const value = $(this).attr('data-filter');
+				if (value == 'all'){
+				  $('.itemBox').show('1000');
+				}
+				else{
+				  $('.itemBox').not('.'+value).hide('1000');
+				  $('itemBox').filter('.'+value).show('1000');
+				}
+			})
+			$('.list').click(function(){
+			  $(this).addClass('active').siblings().removeClass('active')
+			})
+		  })
+		 
+		</script>
+			<!-- END GRID -->
+			</div>
 					<div class="clearfix"> </div>																																					
 				</div>
 		</div>
@@ -349,7 +327,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<h4>Contact</h4>
 				<p class="contact-head">I will like to hear from you. </p>
 				<div class="row contact-form">
-					<form action="#" method="POST">
+					<form action="https://formspree.io/f/mgednrzz" method="POST">
 						<div class="col-md-6 text-box">
 							<input type="text" placeholder="Name" requred>
 							<input type="text" placeholder="Email" required>
@@ -384,4 +362,3 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<script src="js/bootstrap.min.js"></script>
 	</body>
 </html>
-
