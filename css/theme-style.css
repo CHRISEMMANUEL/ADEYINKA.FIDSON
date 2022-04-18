@@ -252,7 +252,7 @@ html, body{
 			}
 			section ul li.active
 			{
-				background: #03a9f4;
+				background: #cf9a06;
 				color: #fff;
 			}
 			.product
@@ -270,12 +270,11 @@ html, body{
 			}
 			.product .itemBox images
 			{
-				position: absolute;
-				top: 0;
-				left: 0;
-				width: 100%;
-				height: 100%;
-				object-fit: cover;
+				max-width:100%;
+				transition: all 300ms!important;
+				-webkit-transition: all 300ms!important;
+				-moz-transition: all 300ms!important;
+				display: block;
 			}
 /* Self Clearing Goodness */
 .container:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
